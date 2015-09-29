@@ -1,0 +1,23 @@
+# Mostrar el contenido de este código en una consola
+clear
+cat ./Rimas.hix
+
+# Contador palabras
+echo $1
+./SepararPalabras.hix $1 $2
+
+#  Ordenar
+sort  -f ~/HermogeNiX/$2.normalizado |
+rev  |
+sort |
+rev  |
+uniq |
+iconv -f utf-8> ~/HermogeNiX/$2.rimas
+
+./VerContenido.hix ~/HermogeNiX/$2.rimas
+
+
+
+
+
+

@@ -1,0 +1,44 @@
+OPCION=`zenity --list \
+               --width=360 \
+               --height=320 \
+			   --title="HermógeNiX. Selección de proceso" \
+			   --text "Selecione el proceso que desea realizar" \
+			   --radiolist \
+			   --column "" \
+			   --column "Ngramas" \
+			   FALSE "Bigramas" \
+			   FALSE "Trigramas" \
+			   FALSE "Tetragramas" \
+			   FLASE "Pentagramas"` 
+
+case $OPCION in
+"Bigramas") N=2;; 
+"Trigramas") N=3 ;; 
+"Tetragramas") N=4;;
+"Pentagramas") N=5;;
+esac
+
+./SepararPalabras.hix $1 $2
+
+#Creo un archivo de referencia
+cat ~/HermogeNiX/$2.normalizado>~/HermogeNiX/$2.1.gramas
+
+for i in `seq 2 $N`;
+do
+  CONT=$(($i-1)) 
+  tail --lines=+$i ~/HermogeNiX/$2.normalizado > ~/HermogeNiX/$2.$i #Creo archivos de referencia corridos i renglones
+  paste ~/HermogeNiX/$2.$CONT.gramas ~/HermogeNiX/$2.$i > ~/HermogeNiX/$2.$i.gramas  #Pego los archivos de referencia
+  rm ~/HermogeNiX/$2.$i # Borro referencias inecesarias
+  rm ~/HermogeNiX/$2.$CONT.gramas # Borro referencias inecesarias
+done
+
+sort ~/HermogeNiX/$2.$N.gramas|
+uniq -c |
+sort -nr | 
+#Eliminar espacios al inicio del archivo
+sed -e 's/^[[:space:]]*//'|
+#Convertir espacios en comas
+tr ' ' ','>  ~/HermogeNiX/$2.conteo.ngramas
+
+./VerContenido.hix ~/HermogeNiX/$2.conteo.ngramas
+

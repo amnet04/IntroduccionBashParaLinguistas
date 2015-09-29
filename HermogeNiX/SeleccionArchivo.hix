@@ -1,0 +1,18 @@
+#! /bin/bash
+
+# Mostrar el contenido de este código en una consola
+clear
+cat ./SeleccionArchivo.hix
+
+# Definir variables de archivo y directorio con las que se va a trabajar
+RUTA=`zenity --file-selection --title="HermógeNiX. Selección de archivos a procesar"  --filename=~/`
+NOMBRE_BASE=`basename $RUTA .txt` 
+
+# Envía las selecciones a un archivo de texto de soporte
+echo $RUTA >> ~/HermogeNiX/aux.txt
+ 
+CODIFICACION=$(file -b --mime-encoding $RUTA)
+iconv --from-code=$CODIFICACION  --to-code=UTF-8 $RUTA > ~/HermogeNiX/$NOMBRE_BASE.utf8
+
+
+./SelectorProceso.hix

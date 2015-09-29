@@ -1,0 +1,22 @@
+# Mostrar el contenido de este código en una consola
+clear
+cat ./ContarPalabras.hix
+
+# Contador palabras
+./SepararPalabras.hix $1 $2
+
+#  Ordenar
+sort -f ~/HermogeNiX/$2.normalizado |
+uniq -c |
+sort -nr |
+#Eliminar espacios al inicio del archivo
+sed -e 's/^[[:space:]]*//'|
+#Convertir espacios en comas
+tr ' ' ','> ~/HermogeNiX/$2.conteo
+
+./VerContenido.hix ~/HermogeNiX/$2.conteo
+
+
+
+
+

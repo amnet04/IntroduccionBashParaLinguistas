@@ -1,0 +1,39 @@
+#! /bin/bash
+
+# Mostrar el contenido de este código en una consola
+clear
+cat ./SelectorProceso.hix
+
+#Carga los nombres y rutas de los archivos en variables.
+RUTA=$(tail -n 1 ~/HermogeNiX/aux.txt)
+NOMBRE_BASE=`basename $RUTA .txt`
+
+#Carga el selector de procesos
+OPCION=`zenity --list \
+               --width=360 \
+               --height=320 \
+			   --title="HermógeNiX. Selección de proceso" \
+			   --text "Selecione el proceso que desea realizar" \
+			   --radiolist \
+			   --column "" \
+			   --column "Procesos" \
+			   FALSE "Seleccionar otro archivo" \
+			   FALSE "Ver contenido" \
+			   FALSE "Unificar capitalización" \
+			   FLASE "Listado de palabras ordenado por rimas " \
+			   FALSE "Listado de palabras ordenado por conteo"\
+			   FALSE "Contar N-gramas" \
+			   FALSE "Buscar contextos" \
+			   FALSE "Salir"` 
+
+# Selecciona el proceso de acuerdo a la elección del usuario
+case $OPCION in
+"Seleccionar otro archivo") ./SeleccionArchivo.hix;; 
+"Ver contenido") ./VerContenido.hix ~/HermogeNiX/$NOMBRE_BASE.utf8 ;; 
+"Unificar capitalización") ./UnificarCapitalizacion.hix ~/HermogeNiX/$NOMBRE_BASE.utf8 $NOMBRE_BASE;;
+"Listado de palabras ordenado por rimas ") ./Rimas.hix ~/HermogeNiX/$NOMBRE_BASE.utf8 $NOMBRE_BASE;;
+"Listado de palabras ordenado por conteo") ./ContarPalabras.hix ~/HermogeNiX/$NOMBRE_BASE.utf8 $NOMBRE_BASE;;
+"Contar N-gramas") ./Ngramas.hix ~/HermogeNiX/$NOMBRE_BASE.utf8 $NOMBRE_BASE;;
+"Buscar contextos") ./Contextos.hix ~/HermogeNiX/$NOMBRE_BASE.utf8 $NOMBRE_BASE;;
+"Salir") exit ;;
+esac

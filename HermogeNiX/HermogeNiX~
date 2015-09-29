@@ -1,0 +1,38 @@
+#! /bin/bash
+
+# Crea el directorio de trabajo si no existe
+if [[ ! -e ~/HermogeNiX ]]; 
+  then
+    mkdir ~/HermogeNiX
+fi
+
+#Carga la información del programa
+zenity --info --title="HermógeNiX" --text="HermógeNiX 0.0 versión pre-alfa\nInstituto Caro y Cuervo\nGrupo de lingüística de corpus\n2013\nCC atribución"
+RUTA=`zenity --file-selection --multiple --title="HermógeNiX. Selección de archivos a procesar"  --filename=ARCHIVO`
+ARCHIVO=`basename $RUTA` 
+
+
+#Envía las selecciones a un archivo de texto de soporte
+echo $RUTA >> ~/HermogeNiX/aux.txt
+
+#Carga el selector de procesos
+OPCION=`zenity --list \
+			   --title="HermógeNiX. Selección de proceso" \
+			   --text "Selecione el proceso que desea realizar" \
+			   --radiolist \
+			   --column "" \
+			   --column "Procesos" \
+			   FALSE "Ver contenido" \
+			   FALSE "Unificar capitalización" \
+			   FALSE "Contar palabras" \
+			   FALSE "Contar N-gramas" \
+			   FALSE "Buscar contextos" \
+			   FALSE "Lista de palabras ordenada por rimas" \
+			   FALSE "Salir"` 
+
+# Selecciona el proceso de acuerdo a la elección del usuario
+case $OPCION in
+"Ver contenido") ./VerContenido.hix $RUTA;; 
+"Unificar capitalización") ./UnificarCapitalizacion.hix $RUTA $ARCHIVO;;
+"Salir") exit ;;
+esac

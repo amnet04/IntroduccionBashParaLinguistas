@@ -1,0 +1,11 @@
+# 1) Separar palabras
+tr -sc "[:alpha:][áééíóú][ÁÉÍÓÚ][ñÑ]" '\012' < $1 |
+# Garantizar que la códificación del nuevo archivo sea utf8
+iconv -f utf-8 -c| 
+cat > ~/HermogeNiX/$2.tokens
+
+# 2) Normalizar lista
+tr "[:upper:]" "[:lower:]" < ~/HermogeNiX/$2.tokens |
+tr "ÁÉÍÓÚÜÑ" "áéíóúüñ" |
+iconv -t utf-8 -c| # Garantizar que la códificación del nuevo archivo sea utf8
+cat > ~/HermogeNiX/$2.normalizado

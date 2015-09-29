@@ -1,0 +1,40 @@
+
+
+
+####################################################
+#												   #
+#         iii.	less               #
+#                                                  #
+####################################################
+
+# Mostrar el contenido de este código en una consola#
+cat ./UnificarCapitalizacion.hix
+
+#Cargar el cuadro de diálogo y guardar la selección en la variable "OPCION"
+OPCION=`zenity --list \
+			   --title="HermógeNiX. Unificar capitalización" \
+			   --text "Selecione la capitalización que desea" \
+			   --radiolist \
+			   --column "" \
+			   --column "Selección" \
+			   FALSE "MAYUSCULAS" \
+			   FALSE "minusculas"`
+
+#Realizar la selección según el contenido de la variable $OPCION		   
+case $OPCION in
+"MAYUSCULAS")
+sed -e 's/\(.*\)/\U\1/' <$1 |
+#tr  "[:lower:]" "[:upper:]" <$1 |
+#tr "áéíóúüñ" "ÁÉÍÓÚÜÑ" |
+iconv -t utf-8 -c|
+cat > ~/HermogeNiX/$2.MAYUSCULAS 
+./VerContenido.hix ~/HermogeNiX/$2.MAYUSCULAS ;;
+"minusculas")
+sed -e 's/\(.*\)/\L\1/' <$1 |
+#tr "[:upper:]" "[:lower:]"  <$1 |
+#tr "ÁÉÍÓÚÜÑ" "áéíóúüñ" |
+iconv -t utf-8 -c|
+cat > ~/HermogeNiX/$2.minusculas
+./VerContenido.hix ~/HermogeNiX/$2.minusculas;;
+esac			   
+

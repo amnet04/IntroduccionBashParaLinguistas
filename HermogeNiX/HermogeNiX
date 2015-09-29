@@ -1,0 +1,28 @@
+#! /bin/bash
+
+# Mostrar el contenido de este código en una consola
+clear
+cat ./HermogeNiX
+
+
+# Crea el directorio de trabajo si no existe
+if [[ ! -e ~/HermogeNiX ]];
+  then
+    mkdir ~/HermogeNiX
+fi
+
+#Carga la información del programa
+zenity --info --title="HermógeNiX" --text="
+<big>HermógeNiX 0.0 versión pre-alfa</big>
+
+Compendio de scripts para tratamiento de 
+archivos de texto.
+
+---------- Instituto Caro y Cuervo-------------
+----- Grupo de lingüística de corpus --------
+--------------------  2013  ------------------------
+
+Licencia: CC atribución"
+
+./SeleccionArchivo.hix
+exit

@@ -1,0 +1,45 @@
+zenity --file-selection --titile="HermógeNiX" --text "Seleccione archivos a procesar" --filename=ARCHIVO
+zenity --file-selection --titile="HermógeNiX" --text "Seleccione archivos a procesar" --filename=ARCHIVO
+zenity --file-selection --titile="HermógeNiX" --text "Seleccione archivos a procesar" --filename=ARCHIVO
+
+
+
+/home/eudocio/Dropbox/LingCorp/Informes/Carlos Rodriguez/2013/Septiembre-Octubre/Anexos/PonenciaJovenesLinguistas/MaterialEjemplos/Hermogenes/aux.txt
+/home/eudocio/Dropbox/LingCorp/Informes/Carlos Rodriguez/2013/Septiembre-Octubre/Anexos/PonenciaJovenesLinguistas/MaterialEjemplos/Hermogenes/aux.txt
+/home/eudocio/Dropbox/LingCorp/Informes/Carlos Rodriguez/2013/Septiembre-Octubre/Anexos/PonenciaJovenesLinguistas/MaterialEjemplos/Hermogenes/aux.txt
+/home/eudocio/Dropbox/LingCorp/Informes/Carlos Rodriguez/2013/Septiembre-Octubre/Anexos/PonenciaJovenesLinguistas/MaterialEjemplos/Hermogenes/aux.txt
+/home/eudocio/Dropbox/LingCorp/Informes/Carlos Rodriguez/2013/Septiembre-Octubre/Anexos/PonenciaJovenesLinguistas/MaterialEjemplos/Hermogenes/aux.txt
+/home/eudocio/Dropbox/LingCorp/Informes/Carlos Rodriguez/2013/Septiembre-Octubre/Anexos/PonenciaJovenesLinguistas/MaterialEjemplos/Hermogenes/aux.txt
+/home/eudocio/Dropbox/LingCorp/Informes/CarlosRodriguez/2013/Septiembre-Octubre/Anexos/PonenciaJovenesLinguistas/MaterialEjemplos/Hermogenes/aux.txt
+/home/eudocio/Dropbox/LingCorp/Informes/CarlosRodriguez/2013/Septiembre-Octubre/Anexos/PonenciaJovenesLinguistas/MaterialEjemplos/Hermogenes/aux.txt
+/home/eudocio/Dropbox/LingCorp/Informes/CarlosRodriguez/2013/Septiembre-Octubre/Anexos/PonenciaJovenesLinguistas/MaterialEjemplos/Hermogenes/aux.txt
+/home/eudocio/Dropbox/LingCorp/Informes/CarlosRodriguez/2013/Septiembre-Octubre/Anexos/PonenciaJovenesLinguistas/MaterialEjemplos/Hermogenes/aux.txt
+/home/eudocio/Dropbox/LingCorp/Informes/CarlosRodriguez/2013/Septiembre-Octubre/Anexos/PonenciaJovenesLinguistas/MaterialEjemplos/Hermogenes/aux.txt
+/home/eudocio/Dropbox/LingCorp/Informes/CarlosRodriguez/2013/Septiembre-Octubre/Anexos/PonenciaJovenesLinguistas/MaterialEjemplos/Hermogenes/aux.txt
+/home/eudocio/Dropbox/LingCorp/Informes/CarlosRodriguez/2013/Septiembre-Octubre/Anexos/PonenciaJovenesLinguistas/MaterialEjemplos/Hermogenes/aux.txt
+/home/eudocio/Dropbox/LingCorp/Informes/CarlosRodriguez/2013/Septiembre-Octubre/Anexos/PonenciaJovenesLinguistas/MaterialEjemplos/Hermogenes/aux.txt
+/home/eudocio/Dropbox/LingCorp/Informes/CarlosRodriguez/2013/Septiembre-Octubre/Anexos/PonenciaJovenesLinguistas/MaterialEjemplos/Hermogenes/aux.txt
+/home/eudocio/Dropbox/LingCorp/Informes/CarlosRodriguez/2013/Septiembre-Octubre/Anexos/PonenciaJovenesLinguistas/MaterialEjemplos/Hermogenes/aux.txt
+/home/eudocio/Dropbox/LingCorp/Informes/CarlosRodriguez/2013/Septiembre-Octubre/Anexos/PonenciaJovenesLinguistas/MaterialEjemplos/Hermogenes/zenity
+/home/eudocio/Dropbox/LingCorp/Informes/CarlosRodriguez/2013/Septiembre-Octubre/Anexos/PonenciaJovenesLinguistas/MaterialEjemplos/Hermogenes/zenity
+/home/eudocio/Dropbox/LingCorp/Informes/CarlosRodriguez/2013/Septiembre-Octubre/Anexos/PonenciaJovenesLinguistas/MaterialEjemplos/Hermogenes/aux.txt
+/home/eudocio/Dropbox/LingCorp/Informes/CarlosRodriguez/2013/Septiembre-Octubre/Anexos/PonenciaJovenesLinguistas/MaterialEjemplos/Hermogenes/aux.txt
+
+/home/eudocio/Dropbox/LingCorp/Informes/CarlosRodriguez/2013/Septiembre-Octubre/Anexos/PonenciaJovenesLinguistas/MaterialEjemplos/Hermogenes/aux.txt
+/home/eudocio/Dropbox/LingCorp/Informes/CarlosRodriguez/2013/Septiembre-Octubre/Anexos/PonenciaJovenesLinguistas/MaterialEjemplos/Hermogenes/aux.txt
+/home/eudocio/Dropbox/LingCorp/Informes/CarlosRodriguez/2013/Septiembre-Octubre/Anexos/PonenciaJovenesLinguistas/MaterialEjemplos/Hermogenes/aux.txt
+/home/eudocio/Dropbox/LingCorp/Informes/CarlosRodriguez/2013/Septiembre-Octubre/Anexos/PonenciaJovenesLinguistas/MaterialEjemplos/Hermogenes/aux.txt
+/home/eudocio/Dropbox/LingCorp/Informes/CarlosRodriguez/2013/Septiembre-Octubre/Anexos/PonenciaJovenesLinguistas/MaterialEjemplos/Hermogenes/aux.txt
+/home/eudocio/Dropbox/LingCorp/Informes/CarlosRodriguez/2013/Septiembre-Octubre/Anexos/PonenciaJovenesLinguistas/MaterialEjemplos/Hermogenes/aux.txt
+/home/eudocio/Dropbox/LingCorp/Informes/CarlosRodriguez/2013/Septiembre-Octubre/Anexos/PonenciaJovenesLinguistas/MaterialEjemplos/Hermogenes/aux.txt
+/home/eudocio/Dropbox/LingCorp/Informes/CarlosRodriguez/2013/Septiembre-Octubre/Anexos/PonenciaJovenesLinguistas/MaterialEjemplos/Hermogenes/aux.txt
+/home/eudocio/Dropbox/LingCorp/Informes/CarlosRodriguez/2013/Septiembre-Octubre/Anexos/PonenciaJovenesLinguistas/MaterialEjemplos/Hermogenes/aux.txt
+/home/eudocio/Dropbox/LingCorp/Informes/CarlosRodriguez/2013/Septiembre-Octubre/Anexos/PonenciaJovenesLinguistas/MaterialEjemplos/Hermogenes/aux.txt
+/home/eudocio/Dropbox/LingCorp/Informes/CarlosRodriguez/2013/Septiembre-Octubre/Anexos/PonenciaJovenesLinguistas/MaterialEjemplos/Hermogenes/aux.txt
+/home/eudocio/Dropbox/LingCorp/Informes/CarlosRodriguez/2013/Septiembre-Octubre/Anexos/PonenciaJovenesLinguistas/MaterialEjemplos/Hermogenes/aux.txt
+/home/eudocio/Dropbox/LingCorp/Informes/CarlosRodriguez/2013/Septiembre-Octubre/Anexos/PonenciaJovenesLinguistas/MaterialEjemplos/Hermogenes/aux.txt
+/home/eudocio/Dropbox/LingCorp/Informes/CarlosRodriguez/2013/Septiembre-Octubre/Anexos/PonenciaJovenesLinguistas/MaterialEjemplos/Hermogenes/aux.txt
+/home/eudocio/Dropbox/LingCorp/Informes/CarlosRodriguez/2013/Septiembre-Octubre/Anexos/PonenciaJovenesLinguistas/MaterialEjemplos/Hermogenes/aux.txt
+/home/eudocio/Dropbox/LingCorp/Informes/CarlosRodriguez/2013/Septiembre-Octubre/Anexos/PonenciaJovenesLinguistas/MaterialEjemplos/Hermogenes/aux.txt
+/home/eudocio/Dropbox/LingCorp/Informes/CarlosRodriguez/2013/Septiembre-Octubre/Anexos/PonenciaJovenesLinguistas/MaterialEjemplos/Documentos/Quijote.txt
+/home/eudocio/Dropbox/LingCorp/Informes/CarlosRodriguez/2013/Septiembre-Octubre/Anexos/PonenciaJovenesLinguistas/MaterialEjemplos/Documentos/Quijote.txt

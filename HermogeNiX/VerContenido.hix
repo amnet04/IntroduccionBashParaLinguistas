@@ -1,0 +1,7 @@
+# Mostrar el contenido de este código en una consola
+clear
+cat ./VerContenido.hix
+
+#Garantizar que less utilice utf8
+less $1|zenity --title=$1 --text-info --width=800 --height=600
+./SelectorProceso.hix $1 $2		
